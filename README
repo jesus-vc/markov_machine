@@ -1,0 +1,27 @@
+SUMMARY:
+
+- This is a terminal program where you can generate random text from a file or URL. The program leverages an algorithm resembling a Markov Machine, which emits output of a “Markov Chain.” The algorithm is written in the 'MarkovMachine' class in /src/markov.js.
+
+- If a URL is provided, the program generates random text from the HTTP response.
+
+- Data is validated to handle for various improper inputs, including an empty file, invalid URl inputs, and missing command arguments.
+
+INSTRUCTIONS:
+
+- The file you supply must already be stored in the /files directory. Currently, that only includes 'eggs.txt' and couple of other test files to test edge case errors.
+
+- By default, the program will generate 100 words, unless you supply another number as the 5th argument. If the program selects a value of 'null' from a key's array of values, this marks the end of a 'Markov Machine' chain, which triggers the program to stop and output any randomly generated text.
+
+EXAMPLES OF TERMINAL COMMANDS AND RESPONSES:
+
+-- node src/makeText.js file eggs.txt 15
+
+Not on Like them eat them If you green eggs not in goodm you So
+
+-- node src/makeText.js file eggs.txt 150
+
+Not in On a box Not see Not Try them there I do not And in tree I ham I say Sam ham I anhywhere I Anywhere I like Green Green eggs Green eggs anhywhere I there I or there like Green here or boat I They are You do boat And boat I Say I If you you In are I try them Do you Daniel I goodm you box I do not rain And a car house I A train them With do not If you Could you eggs and In a on a eat them do not house I train A Would you will not box And mouse I That Sam-I-am tree I try them not eat will see on a in a That Sam-I-am In a dark Not they are Do you I would would not not like or there will not not like there I
+
+-- node src/makeText.js url https://www.nba.com/ 90
+
+15 2023 highlight Harden's Foundation Social scorer 02 website please Turner Sports Film Study Trail Blazers Curry delivers Hawks Charlotte will depend drama 10 problem for Indiana Pacers All rights honors 01 Brandon Williams Bulls Cleveland NBATickets com operating vehicle that won't pedigree to optimistic about 2022-23 01 Shop Hardwood week loaded Knicks Philadelphia Thunder Portland improve in Opening week 00 Budding players on Highlights See true point wins Film fills 2022-23 Collins and Irving shows 13 2023 Custom Shop More 01 Standings Go NBABet Home return to Lockervision NBA
