@@ -22,7 +22,6 @@ const makeTextFromFile = (file) => {
   } else {
     console.log(textGenerated);
   }
-  //return; //PEER makeTextFromFile() is void function, so return probably isn't needed?
 };
 
 const makeTextFromURL = async () => {
@@ -71,8 +70,6 @@ const makeTextFromURL = async () => {
   }
 };
 
-//PEER Is it best to validate data before running the actual program? For example, to ensure url is valid before my programs attempts to process it?
-//PEER- Would it be helpful to write error classes in validateData() to reduce any repetitive code, or any other ideas to optimize code?
 const validateData = () => {
   if (process.argv[2] !== "file" && process.argv[2] !== "url") {
     throw new Error(
